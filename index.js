@@ -22,7 +22,7 @@ var mongoURL = userArgs[0];
 //Configurando a conexao com o Banco de Dados
 var mongoose = require('mongoose');
 var mongoURL = process.env.MONGO_DB;
-mongoose.connect(mongodb+srv://laryssa240274:1234@cluster0.xrv5t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0);
+mongoose.connect('mongodb+srv://laryssa240274:1234@cluster0.xrv5t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', (error) => {
